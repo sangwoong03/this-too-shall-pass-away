@@ -89,13 +89,14 @@ $ cd /home/ubuntu
 1. 다음 명령어를 입력합니다.
 
 ```powershell
-$ https://aws-codedeploy-us-east-2.s3.us-east-2.amazonaws.com/latest/install
+$ wget https://aws-codedeploy-us-east-2.s3.us-east-2.amazonaws.com/latest/install
 ```
 
 1. 다음 명령어를 입력합니다.
 
 ```powershell
 $ chmod +x ./install
+$ sudo ./install auto
 ```
 
 1. codeDeploy Agent 실행 여부 확인하기.
