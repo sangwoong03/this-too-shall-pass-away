@@ -4,11 +4,11 @@
 This repository will be filled with sources or information that I learn about programming.
 
 - Backend
-- Frontend ... Maybe
+- Frontend
 - Computer Science
-- Devops ... Infrastructure
+- Devops
 - [Books](./books)
-- Algorithm ... Hopefully!
+- Algorithm
 
 # For whom?
 For me, for someone who wanna be a developer.
