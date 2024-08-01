@@ -189,7 +189,7 @@ JavaScript 코드를 기반으로 설명하겠습니다.
 
 1. Configuration transports
 
-nodemailer에서 SMTP
+nodemailer에서 SMTP 서버를 이용할 수 있습니다. Gmail 서버를 사용하기 위해 필요한 auth 정보는 다음과 같습니다:
 
 - auth (the authentication object)
   - `*type`: 인증 타입 ('OAuth2')
