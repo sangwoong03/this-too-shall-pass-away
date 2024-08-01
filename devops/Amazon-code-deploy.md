@@ -47,11 +47,11 @@ CodeDeploy는 다음 이점을 제공합니다:
 
 1. 배포 프로세스 대상이 되는 `애플리케이션`을 생성합니다.
 
-   ![Untitled](create-code-deploy.png)
+   ![Untitled](src/create-code-deploy.png)
 
 2. 생성된 애플리케이션을 선택하여 `배포 그룹`을 생성합니다.
 
-   ![Untitled](code-deploy-dp-group.png)
+   ![Untitled](src/code-deploy-dp-group.png)
 
    `배포 그룹 생성` 버튼을 클릭하면 중간에 서비스 역할을 선택하는 탭이 있습니다. 여기서는 CodeDeploy와 연결할 서비스에 대해 IAM 역할을 생성하여 추가해주면 됩니다. e.g., 만약 S3 객체로 저장되는 파일을 가져와 EC2 인스턴스에 배포를 하려고 한다면 다음 두가지 액세스 정책이 추가된 역할을 생성하고 연결해줍니다.
 
@@ -116,7 +116,7 @@ CodeDeploy는 배포 대상 서비스에 따라 동작하는 프로세스에 차
 3. 배포 구성 및 배포 시작배포 그룹에 지정된 구성 옵션을 기준으로 배포가 시작됩니다. CodeDeploy는 애플리케이션 루트 디렉토리에 지정된 `appspec.yml` 파일을 참고하여 S3 버킷의 객체로 업로드 된 애플리케이션 코드와 파일을 EC2 인스턴스로 복사합니다.
 4. 배포 그룹의 배포 내역을 확인할 수 있습니다. 배포가 실패한 경우 실패한 시점의 이벤트 로그를 확인할 수도 있습니다.
 
-   ![Untitled](code-deploy-status.png)
+   ![Untitled](src/code-deploy-status.png)
 
 <br>
 

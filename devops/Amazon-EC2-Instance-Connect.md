@@ -12,7 +12,7 @@
 
 # 📍 2. 연결 과정
 
-AWS 공식문서에서는 해당 Endpoint로 Private Subnet에 접속할 수 있는 과정을 다음 다이어그램으로 설명하고 있습니다. ![ec2-connect-endpoint](ec2-connect-endpoint.png)
+AWS 공식문서에서는 해당 Endpoint로 Private Subnet에 접속할 수 있는 과정을 다음 다이어그램으로 설명하고 있습니다. ![ec2-connect-endpoint](src/ec2-connect-endpoint.png)
 
 - 우선 EC2 Instance Connect Endpoint를 특정 VPC의 Subnet에 프로비저닝 합니다.
 - 생성한 Endpoint를 활용해 해당 Subnet과 연동된 VPC안의 모든 Subnet에 접속할 수 있게 됩니다.
@@ -55,7 +55,7 @@ EC2 Instance Connect Endpoint는 생각보다 쉽게 생성하고 접속할 수 
 ### ✔️ 1) VPC를 생성합니다.
 
 - 서비스 검색에서 VPC를 생성합니다.
-- VPC 생성 후 서브넷을 생성하고 라우팅 테이블을 설정해주어야 합니다. `VPC 등`을 선택하면 모든 작업을 자동화 할 수 있습니다.<br> ![alt text](vpc.png)
+- VPC 생성 후 서브넷을 생성하고 라우팅 테이블을 설정해주어야 합니다. `VPC 등`을 선택하면 모든 작업을 자동화 할 수 있습니다.<br> ![alt text](src/vpc.png)
 
 ### ✔️ 2) EC2 인스턴스를 생성합니다.
 
@@ -65,7 +65,7 @@ EC2 Instance Connect Endpoint는 생각보다 쉽게 생성하고 접속할 수 
 
 - VPC 서비스로 이동하여 엔드포인트로 이동합니다.
 - `EIC Endpoint`를 선택합니다.
-- 1번에서 생성한 VPC를 선택하고 Subnet을 선택합니다.<br> ![alt text](vpc-endpoint.png)
+- 1번에서 생성한 VPC를 선택하고 Subnet을 선택합니다.<br> ![alt text](src/vpc-endpoint.png)
 
 ### ✔️ 4) 보안그룹을 적절하게 수정합니다.
 
@@ -73,7 +73,7 @@ EC2 Instance Connect Endpoint는 생각보다 쉽게 생성하고 접속할 수 
 
 ### ✔️ 5) EC2 인스턴스에서 EIC 접속하기
 
-생성된 EIC 엔드포인트와 동일한 VPC 중 Private Subnet에 배포된 EC2 인스턴스 콘솔로 이동합니다. 인스턴스 페이지 상단에 `연결`을 클릭하면 아래와 같은 화면을 볼 수 있습니다. ![alt text](ec2-connection.png)
+생성된 EIC 엔드포인트와 동일한 VPC 중 Private Subnet에 배포된 EC2 인스턴스 콘솔로 이동합니다. 인스턴스 페이지 상단에 `연결`을 클릭하면 아래와 같은 화면을 볼 수 있습니다. ![alt text](src/ec2-connection.png)
 
 - EC2 인스턴스 연결 탭을 선택합니다.
 - `EC2 인스턴스 연결 엔드포인트를 사용하여 연결`을 선택합니다.
