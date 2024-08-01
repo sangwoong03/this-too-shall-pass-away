@@ -64,9 +64,9 @@ CloudWatch는 사용자가 필요한 만큼만 사용할 수 있으며, 사용�
 
 EC2 인스턴스에서 CloudWatch로 로그 스트림을 보내기 위해서는 IAM Role을 추가해주어야 합니다.
 
-- 아래 화면과 같이 IAM Role을 생생해줍니다. ![alt text](create-iam-role.png)
+- 아래 화면과 같이 IAM Role을 생생해줍니다. ![alt text](src/create-iam-role.png)
 
-- 다음 `CloudWatchAgentServerPolicy`를 선택합니다. ![alt text](cloudwatch-agent-role.png)
+- 다음 `CloudWatchAgentServerPolicy`를 선택합니다. ![alt text](src/cloudwatch-agent-role.png)
 
 ### 3) EC2에 IAM Role 추가하기.
 
@@ -125,4 +125,4 @@ $ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch
 
 ### 5) 로그 확인하기
 
-설정과 에이전트를 시작했다면 프로젝트의 로그를 CloudWatch > 로그 그룹 > 로그 스트림에서 확인할 수 있습니다: ![alt text](cloudwatch-logstream.png)
+설정과 에이전트를 시작했다면 프로젝트의 로그를 CloudWatch > 로그 그룹 > 로그 스트림에서 확인할 수 있습니다: ![alt text](src/cloudwatch-logstream.png)
