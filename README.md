@@ -1,14 +1,12 @@
-> this-too-shall-pass-away
+## Introduce
+This repository will contain resources and information I learn about programming.
 
-# What it is?
-This repository will be filled with sources or information that I learn about programming.
-
-- Backend
+- [Backend](./backend)
 - Frontend
 - Computer Science
 - Devops
 - [Books](./books)
 - Algorithm
 
-# For whom?
+## For whom?
 For me, for someone who wanna be a developer.
