@@ -4,7 +4,7 @@ This repository will contain resources and information I learn about programming
 - [Backend](./backend)
 - Frontend
 - Computer Science
-- [Devops](./Devops)
+- [Devops](./devops)
 - [Books](./books)
 - Algorithm
 
